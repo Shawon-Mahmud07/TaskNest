@@ -1,4 +1,6 @@
 import Banner from "../Banner";
+import Features from "../Features";
+import Footer from "../Footer";
 import NavBar from "../Navbar";
 
 const Home = () => {
@@ -6,6 +8,8 @@ const Home = () => {
     <div>
       <NavBar></NavBar>
       <Banner></Banner>
+      <Features></Features>
+      <Footer></Footer>
     </div>
   );
 };

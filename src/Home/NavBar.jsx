@@ -116,7 +116,7 @@ function NavList() {
       )} */}
       <Link to="/login">
         <Button
-          className="block bg-gradient-to-l from-[#6F00CC]  to-[#9000CC] py-1 lg:py-2 rounded-md  font-semibold text-base text-[#fff] hover:bg-gradient-to-r hover:from-[#6F00CC]  hover:to-[#9000CC]"
+          className="block bg-gradient-to-r from-[#6F00CC]  to-[#9000CC] py-1 lg:py-2 rounded-md  font-semibold text-base text-[#fff] hover:bg-gradient-to-l hover:from-[#6F00CC]  hover:to-[#9000CC]"
           size="sm"
         >
           <span>Login</span>

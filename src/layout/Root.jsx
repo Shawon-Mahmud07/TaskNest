@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 
-// import { ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 
 const Root = () => {
   const { pathname } = useLocation();
@@ -11,7 +11,7 @@ const Root = () => {
   return (
     <div>
       <Outlet></Outlet>
-      {/* <ToastContainer></ToastContainer> */}
+      <ToastContainer></ToastContainer>
     </div>
   );
 };
