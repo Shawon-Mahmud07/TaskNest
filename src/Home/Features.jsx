@@ -14,7 +14,7 @@ const Features = () => {
       style={backgroundStyles}
       className=" h-auto lg:h-screen brightness-75 "
     >
-      <div className="flex items-center  lg:h-screen max-w-screen-2xl mx-auto">
+      <div className="flex items-center  lg:h-screen max-w-screen-2xl mx-auto pb-8 lg:pb-0">
         <div className="w-11/12 lg:w-10/12 mx-auto  ">
           <div className="flex flex-col lg:flex-row  justify-between items-center">
             <div className="md:w-1/2">
@@ -28,7 +28,7 @@ const Features = () => {
               <h2 className="text-2xl lg:text-4xl font-bold mb-3 lg:w-3/4 leading-snug font-serif">
                 Wherever you go, stay in control.
               </h2>
-              <p className="  text-sm font-medium font-Inter lg:text-xl lg:text-left lg:w-5/6">
+              <p className="  text-base font-medium font-Inter lg:text-xl lg:text-left lg:w-5/6">
                 With 10+ apps and plugins, effortlessly review upcoming tasks
                 and add new ones on the fly. Experience seamless synchronization
                 across all your devices..
