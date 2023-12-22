@@ -1,5 +1,6 @@
 import { Button } from "@material-tailwind/react";
 import bannerImg from "../assets/banner.jpg";
+import { Link } from "react-router-dom";
 const Banner = () => {
   const backgroundStyles = {
     backgroundImage: `url(${bannerImg})`,
@@ -23,13 +24,14 @@ const Banner = () => {
               <strong className="text-[#8700CC] font-Inter">TaskNest</strong>. A
               leading task management and to-do list application globally
             </p>
-
-            <Button
-              className=" bg-gradient-to-r mt-6 lg:mt-10 from-[#6F00CC]  to-[#9000CC] py-1 lg:py-2 rounded-md  font-semibold text-base text-[#fff] hover:bg-gradient-to-l hover:from-[#6F00CC]  hover:to-[#9000CC]"
-              size="md"
-            >
-              Let&apos;s Explore
-            </Button>
+            <Link to="/user/dashboard">
+              <Button
+                className=" mt-6 lg:mt-10 bg-gradient-to-r  from-[#6F00CC]  to-[#9000CC] hover:bg-gradient-to-l hover:from-[#6F00CC]  hover:to-[#9000CC]  py-1 lg:py-2 rounded-md  font-semibold text-base text-[#fff] "
+                size="md"
+              >
+                Let&apos;s Explore
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@ const MoreFeature = () => {
   return (
     <div
       style={backgroundStyles}
-      className=" h-auto lg:h-screen brightness-75 "
+      className=" h-auto lg:h-screen brightness-90 "
     >
       <div className="max-w-screen-2xl mx-auto  ">
         <div className=" flex flex-col lg:flex-row justify-center -pt-10 items-center lg:h-screen w-11/12 md:w-9/12 lg:w-6/12 mx-auto ">

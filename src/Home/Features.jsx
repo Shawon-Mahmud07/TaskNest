@@ -12,7 +12,7 @@ const Features = () => {
   return (
     <div
       style={backgroundStyles}
-      className=" h-auto lg:h-screen brightness-75 "
+      className=" h-auto lg:h-screen brightness-90 "
     >
       <div className="flex items-center  lg:h-screen max-w-screen-2xl mx-auto pb-8 lg:pb-0">
         <div className="w-11/12 lg:w-10/12 mx-auto  ">
