@@ -51,7 +51,7 @@ export function SidebarWithLogo() {
         </h2>
       </div>
       <List>
-        <Link to="/admin/dashboard">
+        <Link to="">
           <ListItem>
             <ListItemPrefix>
               <PresentationChartBarIcon className="h-5 w-5" />
@@ -86,7 +86,7 @@ export function SidebarWithLogo() {
           </ListItem>
           <AccordionBody className="py-1">
             <List className="p-0">
-              <Link to="/admin/dashboard/add-product">
+              <Link to="/user/dashboard/ToDoList">
                 <ListItem>
                   <ListItemPrefix>
                     <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
@@ -100,7 +100,7 @@ export function SidebarWithLogo() {
                   <ListItemPrefix>
                     <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                   </ListItemPrefix>
-                  Products
+                  Task Summary
                 </ListItem>
               </Link>
             </List>

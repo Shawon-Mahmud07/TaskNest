@@ -7,6 +7,7 @@ import SignUp from "../Pages/SignUp";
 import DashboardLayout from "../Dashboard/DashboardLayout";
 import PrivetRoute from "../PrivetRoute/PrivetRoute";
 import Dashboard from "../Dashboard/Dashboard";
+import ToDoList from "../Dashboard/ToDoList";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/user/dashboard",
         element: <Dashboard></Dashboard>,
+      },
+      {
+        path: "/user/dashboard/ToDoList",
+        element: <ToDoList></ToDoList>,
       },
     ],
   },
