@@ -17,7 +17,7 @@ import {
 import { HiEyeOff, HiEye } from "react-icons/hi";
 // react-toastify
 import "react-toastify/dist/ReactToastify.css";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 import { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -29,7 +29,7 @@ import { GoogleAuthProvider } from "firebase/auth";
 const Login = () => {
   const { userSignIn, handleGoogleSignIn } = useContext(AuthContext);
   const navigate = useNavigate();
-  const from = "/user/dashboard";
+  const from = "/";
 
   const [passwordIcon, setShowPassword] = useState(false);
   const [captchaValue, setCaptchaValue] = useState("");
@@ -253,7 +253,6 @@ const Login = () => {
           </Card>
         </div>
       </div>
-      <ToastContainer></ToastContainer>
     </div>
   );
 };

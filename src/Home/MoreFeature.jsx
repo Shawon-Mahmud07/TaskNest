@@ -15,10 +15,10 @@ const MoreFeature = () => {
       <div className="max-w-screen-2xl mx-auto  ">
         <div className=" flex flex-col lg:flex-row justify-center -pt-10 items-center lg:h-screen w-11/12 md:w-9/12 lg:w-6/12 mx-auto ">
           <div className="text-center my-8 lg:my-0 ">
-            <h1 className="text-3xl  lg:text-5xl  font-serif font-bold">
+            <h1 className="text-2xl  lg:text-4xl  font-serif font-bold">
               Countless individuals depend on TaskNest.
             </h1>
-            <p className="text-base lg:text-xl mt-3 lg:mt-5 font-Inter ">
+            <p className="text-base lg:text-lg mt-3 lg:mt-5 font-Inter ">
               to bring order and structure to their{" "}
               <strong> professional and personal</strong> lives.
             </p>

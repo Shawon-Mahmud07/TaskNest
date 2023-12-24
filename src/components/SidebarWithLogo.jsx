@@ -13,29 +13,16 @@ import {
 import {
   PresentationChartBarIcon,
   Cog6ToothIcon,
-  PowerIcon,
 } from "@heroicons/react/24/solid";
 import { FaTasks } from "react-icons/fa";
 import { ChevronRightIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import { AuthContext } from "../Providers/AuthProvider";
-import { Link, Navigate } from "react-router-dom";
-import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
 
 import { HiHome } from "react-icons/hi";
 
 export function SidebarWithLogo() {
-  const { user, logOut } = useContext(AuthContext);
-
-  const handleLogOut = () => {
-    logOut()
-      .then(() => {
-        toast.success("Sign-out successful.");
-        Navigate("/login");
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
+  const { user } = useContext(AuthContext);
 
   const [open, setOpen] = React.useState(0);
   const handleOpen = (value) => {
@@ -46,7 +33,7 @@ export function SidebarWithLogo() {
     <Card className="h-[calc(100vh-2rem)]  w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5 ">
       <div className="mb-2 flex items-center gap-4 p-4">
         <img src={user.photoURL} alt="brand" className="h-8 w-8" />
-        <h2 className="font-cinzel text-xl" color="blue-gray">
+        <h2 className="font-serif uppercase text-xl" color="blue-gray">
           {user.displayName}
         </h2>
       </div>
@@ -121,12 +108,6 @@ export function SidebarWithLogo() {
             <Cog6ToothIcon className="h-5 w-5" />
           </ListItemPrefix>
           Settings
-        </ListItem>
-        <ListItem onClick={handleLogOut}>
-          <ListItemPrefix>
-            <PowerIcon className="h-5 w-5" />
-          </ListItemPrefix>
-          Log Out
         </ListItem>
       </List>
     </Card>

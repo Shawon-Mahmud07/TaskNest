@@ -5,7 +5,7 @@ const Dashboard = () => {
   const { user } = useContext(AuthContext);
   return (
     <div className="w-full text-center b ">
-      <h3 className="text-2xl mt-10 text-[#8700CC] font-cinzel bg-gray-200 py-2 font-bold ">
+      <h3 className="text-2xl mt-10 text-[#8700CC] font-sans uppercase bg-gray-200 py-2 font-bold ">
         Welcome {user?.displayName}{" "}
       </h3>
       <div className="w-9/12 mx-auto">

@@ -20,7 +20,7 @@ function NavList() {
     logOut()
       .then(() => {
         toast.success("Sign-out successful.");
-        Navigate("/login");
+        Navigate("/");
       })
       .catch((error) => {
         console.log(error);
@@ -36,35 +36,6 @@ function NavList() {
         <NavLink to="/">HOME</NavLink>
       </Typography>
 
-      {/* {userRoll == "manager" ? (
-        <>
-          <Typography
-            as="li"
-            className="px-1  md:text-sm xl:text-lg  lg:font-extrabold font-Inter"
-          >
-            <NavLink
-              to="/admin/dashboard"
-              className="flex items-center  transition-colors"
-            >
-              DASHBOARD
-            </NavLink>
-          </Typography>
-        </>
-      ) : (
-        <>
-          <Typography
-            as="li"
-            className="px-1  md:text-sm xl:text-lg  lg:font-extrabold font-Inter"
-          >
-            <NavLink
-              to="/create-store"
-              className={({ isActive }) => (isActive ? activeNav : normalNav)}
-            >
-              CREATE STORE
-            </NavLink>
-          </Typography>
-        </>
-      )} */}
       <Typography
         as="li"
         className="px-1 hover:text-[#8700CC] hover:underline underline-offset-8 md:text-sm xl:text-lg  lg:font-extrabold font-Inter"

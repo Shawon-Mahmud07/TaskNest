@@ -4,6 +4,7 @@ import Features from "../Features";
 import Footer from "../Footer";
 import MoreFeature from "../MoreFeature";
 import NavBar from "../Navbar";
+import Audience from "../Audience";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <NavBar></NavBar>
       <Banner></Banner>
       <Features></Features>
+      <Audience></Audience>
       <MoreFeature></MoreFeature>
       <Footer></Footer>
     </div>
