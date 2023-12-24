@@ -1,6 +1,8 @@
 import bannerImg from "../assets/cool-background.png";
 import featureImg from "../assets/audiences.png";
+import useAos from "../hooks/useAos";
 const Audience = () => {
+  useAos();
   const backgroundStyles = {
     backgroundImage: `url(${bannerImg})`,
     backgroundRepeat: "no-repeat",
@@ -14,7 +16,12 @@ const Audience = () => {
     >
       <div className="max-w-screen-2xl mx-auto  ">
         <div className=" flex flex-col lg:flex-row justify-center -pt-10 items-center lg:h-screen w-11/12 md:w-9/12 lg:w-6/12 mx-auto ">
-          <div className="text-center my-8 lg:my-0 ">
+          <div
+            data-aos="fade-up"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            className="text-center my-8 lg:my-0 "
+          >
             <h1 className="text-2xl lg:text-4xl  font-serif font-bold">
               Our Audience: Empowering Corporate Professionals and Personal
               Users

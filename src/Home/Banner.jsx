@@ -1,7 +1,10 @@
 import { Button } from "@material-tailwind/react";
 import bannerImg from "../assets/banner.jpg";
 import { Link } from "react-router-dom";
+import useAos from "../hooks/useAos";
+
 const Banner = () => {
+  useAos();
   const backgroundStyles = {
     backgroundImage: `url(${bannerImg})`,
     backgroundRepeat: "no-repeat",
@@ -14,8 +17,16 @@ const Banner = () => {
       className=" h-auto lg:h-screen brightness-125"
     >
       <div className="max-w-screen-2xl mx-auto">
-        <div className=" flex flex-col lg:flex-row justify-center items-center py-14 lg:py-0 lg:h-screen w-11/12 md:w-9/12 lg:w-6/12 mx-auto ">
-          <div className="text-center my-8 lg:my-0 ">
+        <div
+          className=" flex flex-col lg:flex-row justify-center items-center
+          py-14 lg:py-0 lg:h-screen w-11/12 md:w-9/12 lg:w-6/12 mx-auto "
+        >
+          <div
+            data-aos="zoom-out"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            className="text-center my-8 lg:my-0 "
+          >
             <h1 className="text-3xl text-blue-gray-100 lg:text-6xl  font-serif font-bold">
               Bring order to both your work and personal life .
             </h1>

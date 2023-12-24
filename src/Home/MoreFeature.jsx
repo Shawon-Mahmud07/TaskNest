@@ -14,13 +14,20 @@ const MoreFeature = () => {
     >
       <div className="max-w-screen-2xl mx-auto  ">
         <div className=" flex flex-col lg:flex-row justify-center -pt-10 items-center lg:h-screen w-11/12 md:w-9/12 lg:w-6/12 mx-auto ">
-          <div className="text-center my-8 lg:my-0 ">
+          <div
+            data-aos="fade-up"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            className="text-center my-8 lg:my-0 "
+          >
             <h1 className="text-2xl  lg:text-4xl  font-serif font-bold">
               Countless individuals depend on TaskNest.
             </h1>
             <p className="text-base lg:text-lg mt-3 lg:mt-5 font-Inter ">
-              to bring order and structure to their{" "}
-              <strong> professional and personal</strong> lives.
+              Revolutionizing the Organization and Structure of the Professional
+              Landscape, while Enhancing the Personal Lives of Corporate
+              Professionals and Individuals with Unparalleled Efficiency and
+              Simplicity.
             </p>
             <div className="flex justify-center">
               <img className="md:size-96" src={featureImg} alt="" />

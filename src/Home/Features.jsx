@@ -1,8 +1,10 @@
 import { Button } from "@material-tailwind/react";
 import bannerImg from "../assets/cool-background.png";
 import todoImg from "../assets/features.jpg";
+import useAos from "../hooks/useAos";
 
 const Features = () => {
+  useAos();
   const backgroundStyles = {
     backgroundImage: `url(${bannerImg})`,
     backgroundRepeat: "no-repeat",
@@ -16,7 +18,12 @@ const Features = () => {
     >
       <div className="flex items-center  lg:h-screen max-w-screen-2xl mx-auto pb-8 lg:pb-0">
         <div className="w-11/12 lg:w-10/12 mx-auto  ">
-          <div className="flex flex-col lg:flex-row  justify-between items-center">
+          <div
+            data-aos="fade-up"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            className="flex flex-col lg:flex-row  justify-between items-center"
+          >
             <div className="md:w-1/2">
               <img
                 src={todoImg}

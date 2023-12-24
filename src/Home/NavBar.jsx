@@ -11,6 +11,7 @@ import { Link, NavLink, Navigate } from "react-router-dom";
 import React, { useContext } from "react";
 import { toast } from "react-toastify";
 import { AuthContext } from "../Providers/AuthProvider";
+import useAos from "../hooks/useAos";
 
 function NavList() {
   const { user, logOut } = useContext(AuthContext);
@@ -91,6 +92,7 @@ function NavList() {
 }
 
 const NavBar = () => {
+  useAos();
   const [openNav, setOpenNav] = React.useState(false);
   const handleWindowResize = () =>
     window.innerWidth >= 960 && setOpenNav(false);
@@ -103,7 +105,12 @@ const NavBar = () => {
 
   return (
     <div className="lg:fixed w-full  z-10 px-6 py-5 lg:py-2  bg-gradient-to-r from-[#100514]  to-[#00133E] shadow-xl">
-      <div className="max-w-screen-2xl mx-auto">
+      <div
+        data-aos="fade-down"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        className="max-w-screen-2xl mx-auto"
+      >
         <div className="flex items-center justify-between ">
           <Link to="/">
             <div className="flex gap-2 items-center text-white cursor-pointer">

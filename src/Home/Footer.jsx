@@ -1,14 +1,21 @@
 import { Typography } from "@material-tailwind/react";
 
 import logoImg from "../assets/checklist.png";
+import useAos from "../hooks/useAos";
 
 const currentYear = new Date().getFullYear();
 
 const Footer = () => {
+  useAos();
   return (
     <div>
       <footer className="relative w-full pt-6 lg:pt-0 text-white bg-gradient-to-r from-[#100514]  to-[#00133E] shadow-xl ">
-        <div className="max-w-screen-2xl mx-auto ">
+        <div
+          data-aos="fade-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+          className="max-w-screen-2xl mx-auto "
+        >
           <div className="grid grid-cols-1 justify-between  md:grid-cols-3">
             <div className="flex flex-col justify-center items-center ">
               <div>
@@ -107,7 +114,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="   w-full flex justify-center items-center  border-blue-gray-50 py-4 ">
+          <div className="  w-full flex justify-center items-center  border-blue-gray-50 py-4 ">
             <Typography className="text-xs md:text-sm text-center  font-normal text-white font-Inter  ">
               {currentYear} Copyright &copy; TaskNest. All rights reserved.
             </Typography>

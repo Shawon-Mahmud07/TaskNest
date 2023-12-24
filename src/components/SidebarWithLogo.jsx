@@ -18,7 +18,6 @@ import { FaTasks } from "react-icons/fa";
 import { ChevronRightIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import { AuthContext } from "../Providers/AuthProvider";
 import { Link } from "react-router-dom";
-
 import { HiHome } from "react-icons/hi";
 
 export function SidebarWithLogo() {
