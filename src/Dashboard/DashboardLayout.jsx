@@ -4,7 +4,7 @@ import { SidebarWithLogo } from "../components/SidebarWithLogo";
 
 const DashboardLayout = () => {
   return (
-    <div className="flex gap-4 flex-col md:flex-row">
+    <div className="flex overflow-y-hidden gap-4 flex-col md:flex-row">
       <Helmet>
         <title>TaskNest | DashBoard</title>
       </Helmet>
