@@ -56,7 +56,7 @@ const ToDoList = () => {
       confirmButtonText: "Yes, Delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://task-nest-server-livid.vercel.app/${_id}`, {
+        fetch(`https://task-nest-server-livid.vercel.app/delete-todo/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
